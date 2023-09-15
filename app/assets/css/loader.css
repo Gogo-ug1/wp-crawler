@@ -1,0 +1,113 @@
+.loader3 {
+    display: none;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+	/*top: 15%;*/
+	left: 9%;
+
+}
+
+.loader3:before,
+.loader3:after {
+    content: "";
+    border: 2px solid #0968b5;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0px;
+}
+
+.loader3:before {
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1;
+    -webkit-animation: beforeWave 1s infinite linear;
+    animation: beforeWave 1s infinite linear;
+}
+
+.loader3:after {
+    -webkit-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    transform: scale(0, 0);
+    opacity: 0;
+    -webkit-animation: afterWave 1s infinite linear;
+    animation: afterWave 1s infinite linear;
+}
+
+@-webkit-keyframes afterWave {
+    0% {
+        -webkit-transform: scale(0.5, 0.5);
+        transform: scale(0.5, 0.5);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+@keyframes afterWave {
+    0% {
+        -webkit-transform: scale(0.5, 0.5);
+        transform: scale(0.5, 0.5);
+        -webkit-transform: scale(0.5, 0.5);
+        transform: scale(0.5, 0.5);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes beforeWave {
+    0% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1.5, 1.5);
+        transform: scale(1.5, 1.5);
+        opacity: 0;
+    }
+}
+@keyframes beforeWave {
+    0% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1.5, 1.5);
+        transform: scale(1.5, 1.5);
+        opacity: 0;
+    }
+}
+
+
+.content_wp {
+	/*min-height: 350px;*/
+	/*min-width: 850px;*/
+
+	background-color: #FFF;
+	border: 1px solid #CCD0D4;
+	margin: 25px 0;
+	padding: 30px;
+	background-size: 140px;
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+
+.wpc_table {
+	border: 1px solid black;
+	padding:5px
+}
