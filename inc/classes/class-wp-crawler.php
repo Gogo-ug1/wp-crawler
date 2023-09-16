@@ -24,7 +24,8 @@ class Wp_Crawler {
 	 * Using curl to get home page details.
 	 */
 	public function wpc_crawl_home_page() {
-		$fetchurl  = 'https://servicecops.com';
+		// $fetchurl  = 'https://servicecops.com';.
+		$fetchurl  = get_home_url();
 		$urls_list = [];
 		try {
 
@@ -259,7 +260,7 @@ class Wp_Crawler {
 							}
 						} else {
 							?>
-								<tr><td>No results yet</td></tr>
+								<tr><td>No Home Links Found</td></tr>
 							<?php } ?>
 						</table>
 
