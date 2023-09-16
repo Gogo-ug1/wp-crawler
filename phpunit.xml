@@ -1,0 +1,19 @@
+<phpunit bootstrap="tests/phpunit/bootstrap.php" backupGlobals="false"
+		 colors="true" convertErrorsToExceptions="true"
+		 convertNoticesToExceptions="true" convertWarningsToExceptions="true">
+	<testsuites>
+		<testsuite name="unit">
+			<file>tests/test-wp-crawler.php</file>
+			<file>tests/test-wpc-scripts.php</file>
+			<file>tests/test-wpc-ajax.php</file>
+
+		</testsuite>
+
+	</testsuites>
+	<groups>
+		<exclude>
+			<group>ajax</group>
+		</exclude>
+	</groups>
+
+</phpunit>
